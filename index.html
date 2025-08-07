@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      position: relative;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      opacity: 0;
+      animation: fadeIn 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .credit {
+      font-size: 0.75rem;
+      color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      bottom: 2rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    .social {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.75rem;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    .social a {
+      color: rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      margin: 0 0.4rem;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Under Construction</h1>
+    <img src="image-1024.png" alt="Under Construction" />
+  </div>
+
+  <p class="credit">by Your Name</p>
+
+  <div class="social">
+    <a href="https://github.com/yourname" target="_blank">GitHub</a> ·
+    <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a> ·
+    <a href="https://twitter.com/yourname" target="_blank">Twitter</a>
+  </div>
+</body>
+</html>
